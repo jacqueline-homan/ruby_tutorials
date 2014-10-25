@@ -1,0 +1,15 @@
+NCR_2014.txt
+
+Job Interviews for Jr. Devs:
+- Ask about learning/mentoring, commitment to diversity and social justice (i.e. poverty).
+
+- Ask about onboarding/value of other life experience/skills (i.e. non-profit exp, anti-trafficking activist, etc.)
+
+Skills:
+- Testing and reading/editing code 
+- Writing tests for someone else's  code
+- Code reviews (give and get)
+
+Skill Leveling:
+- Peepcode.com
+- Read books
