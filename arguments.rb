@@ -4,10 +4,14 @@
 # Methods with arguments typically use parentheses,
 # but parentheses are optional in Ruby. I use them for clarity.
 
+# Note: It's the order of the args in the
+# def welcome (arg1, arg2 ) statement passed that matters.
+# If the args are switched, the value for nick_name 
+# is passed instead of the value for the variable name.
 
 
-def welcome
-  puts "My friends call me J, but it's Jacqueline to you"
+def welcome(nick_name, name)
+  puts "Hello, my friends call me #{nick_name}, but I prefer #{name}."
 end
 
 def add
@@ -33,7 +37,7 @@ def over_five?
   puts value > 5 ? 'Over 5' : 'Not over 5'
 end
 
-welcome
+welcome("J", "Jacqueline")
 add
 longest_word
 over_five?
