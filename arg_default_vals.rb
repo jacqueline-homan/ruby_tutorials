@@ -1,3 +1,7 @@
+# Argument default values can help avoid getting a
+# wrong number of arguments (0 for 2) (ArgumentError)
+# We do that by making an assignment inside the arg list.
+
 # Arguments are a comma-separated list of values that
 # are passed into methods
 # Values are passed in when they are called.
@@ -10,7 +14,7 @@
 # is passed instead of the value for the variable name.
 
 
-def welcome(nick_name, name)
+def welcome(nick_name = 'J', name = 'Jacqueline')
   puts "Hello, my friends call me #{nick_name}, but I prefer #{name}."
 end
 
@@ -19,7 +23,7 @@ def add(n1, n2)
 end
 
 #@words = ['apple', 'pear', 'bananna', 'supercalifragilisticexpialodocious']
-def longest_word(words)  
+def longest_word(words = [])  
   longest_word = words.inject do |memo, word| # "memo" and "word" are block variables
   	memo.length > word.length ? memo : word
   end
@@ -32,12 +36,11 @@ end
 # that variable will be discarded and can't be used
 # outside of this block
 def over_five?(value)
-  puts value > 5 ? 'Over 5' : 'Not over 5'
+  puts value.to_i > 5 ? 'Over 5' : 'Not over 5'
 end
 
 welcome("J", "Jacqueline")
 add(2,5)
 words = ['apple', 'pear', 'bananna', 'supercalifragilisticexpialodocious']
 longest_word(words)
-over_five?(8)
-
+over_five?(3)
