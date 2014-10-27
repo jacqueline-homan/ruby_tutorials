@@ -22,14 +22,16 @@ def add_and_subtract(n1 = 2, n2 = 5)
   return [add, sub]
 end
 
-def longest_word(words = [])  
-  longest_word = words.inject do |memo, word| # "memo" and "word" are block variables
+def longest_word(words = [])
+# "memo" and "word" are block variables  
+  longest_word = words.inject do |memo, word| 
   	memo.length > word.length ? memo : word
   end
   return longest_word
 end
 
 def over_five?(value)
+	# You can have more than one return value in an if-else block
   return "Exactly 5" if value.to_i == 5
   if value.to_i > 5
   	return "Over 5"
