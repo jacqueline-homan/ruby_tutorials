@@ -1,4 +1,6 @@
 # Classes define what an object is and what it can do.
+# run the command  ruby classes.rb (or ruby ./classes.rb)
+
 class Animal
 
   def set_noise(noise) # This is a "Setter" method
