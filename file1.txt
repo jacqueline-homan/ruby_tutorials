@@ -1,0 +1,4 @@
+Learning coding
+in Ruby
+is
+fun!
