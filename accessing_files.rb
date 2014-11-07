@@ -38,6 +38,6 @@
     # why open a file if you're not writing to
     # a file with read-only perms anyway:
     File.read('file1.txt').each_line do |l|
-      $stdout.puts l.upcase 
+      $stdout.puts l.capitalize 
     end
     # BTW, this is known as refactoring :)
